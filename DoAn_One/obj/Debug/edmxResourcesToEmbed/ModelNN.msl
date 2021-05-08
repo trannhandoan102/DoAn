@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="QLNSuModel1StoreContainer" CdmEntityContainer="QLNSuEntities1">
+    <EntitySetMapping Name="NgoaiNgus">
+      <EntityTypeMapping TypeName="QLNSuModel1.NgoaiNgu">
+        <MappingFragment StoreEntitySet="NgoaiNgu">
+          <ScalarProperty Name="MaNgoaiNgu" ColumnName="MaNgoaiNgu" />
+          <ScalarProperty Name="TenNgoaiNgu" ColumnName="TenNgoaiNgu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

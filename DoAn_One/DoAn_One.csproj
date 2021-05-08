@@ -1,0 +1,1366 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0BBB21DC-1B9B-4353-8CD7-BAF3A47606DB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DoAn_One</RootNamespace>
+    <AssemblyName>DoAn_One</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="DevExpress.BonusSkins.v20.1" />
+    <Reference Include="DevExpress.Charts.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.CodeParser.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.Desktop.v20.1" />
+    <Reference Include="DevExpress.Data.v20.1" />
+    <Reference Include="DevExpress.DataAccess.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v20.1.UI, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Dialogs.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v20.1.Core" />
+    <Reference Include="DevExpress.RichEdit.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v20.1.Export, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v20.1" />
+    <Reference Include="DevExpress.Utils.v20.1.UI, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v20.1" />
+    <Reference Include="DevExpress.Sparkline.v20.1.Core" />
+    <Reference Include="DevExpress.XtraCharts.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v20.1.Extensions, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v20.1.Wizard, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraDialogs.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v20.1" />
+    <Reference Include="DevExpress.XtraGauges.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraLayout.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPivotGrid.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v20.1.Extensions, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebDesign, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1449.0\lib\net40\Microsoft.ReportViewer.WebDesign.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1449.0\lib\net40\Microsoft.ReportViewer.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBackUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBackUp.Designer.cs">
+      <DependentUpon>frmBackUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBaoCaoChuyenMon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBaoCaoChuyenMon.Designer.cs">
+      <DependentUpon>frmBaoCaoChuyenMon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChamCong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChamCong.Designer.cs">
+      <DependentUpon>frmChamCong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChucVu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChucVu.Designer.cs">
+      <DependentUpon>frmChucVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChungChi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChungChi.Designer.cs">
+      <DependentUpon>frmChungChi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChuyenMon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChuyenMon.Designer.cs">
+      <DependentUpon>frmChuyenMon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDangNhap.Designer.cs">
+      <DependentUpon>frmDangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDanToc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDanToc.Designer.cs">
+      <DependentUpon>frmDanToc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDieuChuyen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDieuChuyen.Designer.cs">
+      <DependentUpon>frmDieuChuyen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDoiMK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDoiMK.Designer.cs">
+      <DependentUpon>frmDoiMK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGiaHanHD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGiaHanHD.Designer.cs">
+      <DependentUpon>frmGiaHanHD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHopDong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHopDong.Designer.cs">
+      <DependentUpon>frmHopDong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKhoiPhongBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKhoiPhongBan.Designer.cs">
+      <DependentUpon>frmKhoiPhongBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLuong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLuong.Designer.cs">
+      <DependentUpon>frmLuong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNgoaiNgu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNgoaiNgu.Designer.cs">
+      <DependentUpon>frmNgoaiNgu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNhanVien.Designer.cs">
+      <DependentUpon>frmNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPhongBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPhongBan.Designer.cs">
+      <DependentUpon>frmPhongBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPhuCap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPhuCap.Designer.cs">
+      <DependentUpon>frmPhuCap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQHTN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQHTN.Designer.cs">
+      <DependentUpon>frmQHTN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQTCT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQTCT.Designer.cs">
+      <DependentUpon>frmQTCT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQTDT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQTDT.Designer.cs">
+      <DependentUpon>frmQTDT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQuanLyLuong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuanLyLuong.Designer.cs">
+      <DependentUpon>frmQuanLyLuong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTDVH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTDVH.Designer.cs">
+      <DependentUpon>frmTDVH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTinhThanh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTinhThanh.Designer.cs">
+      <DependentUpon>frmTinhThanh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QLNSuDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLNSuDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLNSuDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLNSuDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="XuLi.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBackUp.resx">
+      <DependentUpon>frmBackUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBaoCaoChuyenMon.resx">
+      <DependentUpon>frmBaoCaoChuyenMon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChamCong.resx">
+      <DependentUpon>frmChamCong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChucVu.resx">
+      <DependentUpon>frmChucVu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChungChi.resx">
+      <DependentUpon>frmChungChi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChuyenMon.resx">
+      <DependentUpon>frmChuyenMon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDangNhap.resx">
+      <DependentUpon>frmDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDanToc.resx">
+      <DependentUpon>frmDanToc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDieuChuyen.resx">
+      <DependentUpon>frmDieuChuyen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDoiMK.resx">
+      <DependentUpon>frmDoiMK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGiaHanHD.resx">
+      <DependentUpon>frmGiaHanHD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHopDong.resx">
+      <DependentUpon>frmHopDong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKhoiPhongBan.resx">
+      <DependentUpon>frmKhoiPhongBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLuong.resx">
+      <DependentUpon>frmLuong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNgoaiNgu.resx">
+      <DependentUpon>frmNgoaiNgu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNhanVien.resx">
+      <DependentUpon>frmNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPhongBan.resx">
+      <DependentUpon>frmPhongBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPhuCap.resx">
+      <DependentUpon>frmPhuCap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQHTN.resx">
+      <DependentUpon>frmQHTN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQTCT.resx">
+      <DependentUpon>frmQTCT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQTDT.resx">
+      <DependentUpon>frmQTDT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuanLyLuong.resx">
+      <DependentUpon>frmQuanLyLuong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTDVH.resx">
+      <DependentUpon>frmTDVH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTinhThanh.resx">
+      <DependentUpon>frmTinhThanh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ReportChuyenMon.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\NgoaiNgu.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="QLNSuDataSet.xsc">
+      <DependentUpon>QLNSuDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QLNSuDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLNSuDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLNSuDataSet.xss">
+      <DependentUpon>QLNSuDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QLNSuDataSet1.xsc">
+      <DependentUpon>QLNSuDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QLNSuDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLNSuDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLNSuDataSet1.xss">
+      <DependentUpon>QLNSuDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\aboutme.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aboutme_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Active_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addEmployee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddOffice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Address_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Address-Book-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Admin-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Administrative Tools-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Afro man star_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Afro man star_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Age_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Age_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\amsn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\amsn_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bacluong_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bacluong_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\business_user_search_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\businessWelcome_4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cadidate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cadre2-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cake_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cake_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar_date.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calender.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calender_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cascade.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAT Calender-32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CATCalender_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Certificate_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Certificate_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Certificate2_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Certificate2_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chair_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chair_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chair_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Change_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\changePass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\changePass_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\changePass_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chart-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Check_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Check_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Check_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\City_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\City_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clock_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clock_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clockUser_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clockUser_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cocautochuc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Column-Chart-256x256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Company.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Company_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Company_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Company-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Configuration_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contract_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contract_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contract_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cry_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cry_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cut_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cut_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Data_Backup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Data_Backup_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Data_Backup16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Data_Recovery.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Data_Recovery_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\database_del.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\date.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\date_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dateblock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dateblock_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Day_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Decentralization.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Decentralization_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\degree_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\degree_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\depart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\depart_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\depart_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\depart_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\depart_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Department.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Department_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DepartmentAdd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DepartmentName_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\detail_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\detail_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\District_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\District_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Drive - Work_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\education_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\education_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Emblem-Money-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Employee_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EmployeeCate_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EmployeeCate_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Evaluation_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Evaluation_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Female_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filesave.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filesave24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flag_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flag_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forms.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forms_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gender.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Globe Connected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Google-Notebook-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grade_misc_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grade_misc_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Graphique-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Graphique-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HandPhone_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HandPhone_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Heart_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Heart_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\history.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\History_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\history_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\House.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\House_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HP-Mobile-2_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HR32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hrm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HRM_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HRM_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Index_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Index_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Info_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\information.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\information_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Job.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Job_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Job-Ready-CS4_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Language_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Language_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Light_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Light_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Light_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\List_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\List_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Log Out_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Log Out_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Log Out_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Log Out_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Male_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mobile_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money_dollar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\month_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MyPassport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MyPassport_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\network_server_database.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New File.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ngachluong_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ngachluong_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NoImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Notebook_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Notepad_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Notepad-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Numbers_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Numbers_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Padlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\People.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\People_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\People_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\People16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\People-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\period_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\period_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Phone_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Phone_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Places_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Places_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PrintDetail_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PrintDetail_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PrintDetail_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PrintDetails_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Printers and Faxes_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Printers and Faxes_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PrintList_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pro_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Process_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Process_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QLNS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QLNS2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QLNS3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Refresh_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Refresh_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Relationship_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Relationship_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Relationship_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Religious_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Religious_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\religious-symbols-9132.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reload_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reload_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Report_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Report_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sad_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sad_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Salary_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SearchEmp_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Security_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Security-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Select-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\server.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Server_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skill_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skill_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Smile_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Smile_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smiling_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smiling_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Speciality_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Speciality_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Start.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Start2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stats2_change-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stop_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stop_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\System_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\System_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Table_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TableGroup_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TableGroup_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tile Horizontal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tile Vertical.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Time Work.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Time Work_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\time.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tool_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Transport_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\treeList1.BackgroundImage.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_switch-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User-Female-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User-Male-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Users_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users_comments_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users_comments_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vietnam_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vietnam_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\View_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\View_128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\window.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Work_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\worried_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\worried_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\154051_adapted_landscape_2160x2160.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2k 2560x1440.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bty-wallpaper-random-techrum %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Speciality_321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo1.png" />
+    <None Include="Resources\Logo_KNPAS_2_-_WEb_1x.png" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
